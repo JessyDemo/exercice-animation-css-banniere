@@ -1,0 +1,52 @@
+.banner {
+  width: 60%;
+  height: 400px;
+  background-color: yellow;
+  text-align: center;
+  font-size: 5em;
+  font-weight: bold;
+  padding-top: 25px;
+  margin-top: 200px;
+  margin-left: 300px; }
+  .banner:hover > .circle-1 {
+    animation: waiting 2s infinite ease-in-out; }
+  .banner:hover > .circle-2 {
+    animation: waiting 2s infinite 0.6s ease-in-out; }
+  .banner:hover > .circle-3 {
+    animation: waiting 2s infinite 1.2s ease-in-out; }
+
+.circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; }
+
+@keyframes waiting {
+  5% {
+    opacity: 0.5;
+    background-color: blue; }
+  11% {
+    background-color: blue;
+    opacity: 0.75; }
+  16% {
+    opacity: 0.5; }
+  21% {
+    background-color: red;
+    opacity: 0.75; }
+  33% {
+    opacity: 0.5;
+    background-color: red; }
+  100% {
+    opacity: 0.25;
+    background-color: yellow; } }
+.udline {
+  width: 400px;
+  height: 75px;
+  background-color: red;
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  margin-left: 500px;
+  margin-top: 25px; }
+
+/*# sourceMappingURL=style.css.map */
