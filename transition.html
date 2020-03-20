@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transition css</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center
+        }
+
+        h1 {
+            position: relative
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            background-color: darkseagreen;
+            width: 0;
+            height: 4px;
+            opacity: 0;
+            transition: opacity .3s ease, width .3s ease;
+            bottom: -5px;
+            left: calc(50% - 75px);/*Pour bien centrer l'elt, je positionne ::after à (50% du titre) - (1/2 de sa taille) */
+            position: absolute
+        }
+
+        h1:hover::after {
+            width: 150px;
+            opacity: 1
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Titre de la page</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit incidunt eos unde. Consequatur iusto quae beatae nihil, animi, quidem eos amet eum corporis, aperiam vel adipisci quod! Aperiam, illum, nulla?
+    </p>
+
+</body>
+
+</html>
